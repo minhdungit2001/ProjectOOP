@@ -4,6 +4,7 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProjectController.ControllerMainObj">
    <children>
@@ -19,7 +20,12 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <Button layoutX="143.0" layoutY="354.0" mnemonicParsing="false" onAction="#addGHCC" text="New" />
-      <Button layoutX="387.0" layoutY="354.0" mnemonicParsing="false" onAction="#deleteGianHangCaoCap" text="Delete" />
+      <HBox alignment="TOP_CENTER" layoutX="52.0" layoutY="360.0" prefHeight="34.0" prefWidth="513.0" spacing="75.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#deleteGianHangCaoCap" text="Delete" />
+            <Button mnemonicParsing="false" onAction="#addGHCC" text="New" />
+            <Button mnemonicParsing="false" onAction="#searchGHCC" text="Find" />
+         </children>
+      </HBox>
    </children>
 </AnchorPane>

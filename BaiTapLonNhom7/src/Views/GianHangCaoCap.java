@@ -1,4 +1,4 @@
-package model;
+package Views;
 
 public class GianHangCaoCap{
     private int soLuongGhe;
@@ -57,6 +57,7 @@ public class GianHangCaoCap{
 
     public GianHangCaoCap() {
         maGianHang = "2";
+        viTri = "DM";
     }
 
     public double chiPhiThue(int soNgay) {
